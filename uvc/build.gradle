@@ -38,8 +38,8 @@ android {
 }
 
 dependencies {
-  api fileTree(dir: 'libs', include: ['*.jar'])
-  api("com.serenegiant:common:2.12.4") {
+  implementation  fileTree(dir: 'libs', include: ['*.jar'])
+  implementation ("com.serenegiant:common:2.12.4") {
     exclude module: 'support-v4'
   }
 }
